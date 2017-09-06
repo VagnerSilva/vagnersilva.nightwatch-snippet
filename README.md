@@ -5,8 +5,8 @@
 
 Use the corresponding prefix
 
->Assert: nwa.
+>Assert: nwa. // no
 
->Command: nwc.
+>Command: nwc. // yes
 
->Wait: nwe.
+>Wait: nwe. // no

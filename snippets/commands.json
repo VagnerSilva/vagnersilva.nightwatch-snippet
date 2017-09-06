@@ -1,207 +1,207 @@
-"nw.ClearValue": {
-		"prefix": "nw.ClearValue",
+"nwa.ClearValue": {
+		"prefix": "nwa.ClearValue",
 		"body": "${1:browser}.clearValue('$2');",
 		"description": "Clear a textarea or a text input element's value. Uses elementIdValue protocol command."
 	},
-	"nw.click": {
-		"prefix": "nw.click",
+	"nwa.click": {
+		"prefix": "nwa.click",
 		"body": "${1:browser}.click('${2:selector}');",
 		"description": "Simulates a click event on the given DOM element. Uses elementIdClick protocol command."
 	},
-	"nw.closeWindow": {
-		"prefix": "nw.closeWindow",
+	"nwa.closeWindow": {
+		"prefix": "nwa.closeWindow",
 		"body": "${1:browser}.closeWindow();",
 		"description": "Close the current window. This can be useful when you're working with multiple windows open (e.g. an OAuth login).Uses window protocol command"
 	},
-	"nw.deleteCookie": {
-		"prefix": "nw.deleteCookie",
+	"nwa.deleteCookie": {
+		"prefix": "nwa.deleteCookie",
 		"body": [
 			"${1:browser}.deleteCookie( '${2:cookieName}', ${3:optional_callback});"
 		],
 		"description": "Delete the cookie with the given name. This command is a no-op if there is no such cookie visible to the current page."
 	},
-	"nw.deleteCookies": {
-		"prefix": "nw.deleteCookies",
+	"nwa.deleteCookies": {
+		"prefix": "nwa.deleteCookies",
 		"body": "${1:browser}.deleteCookies();",
 		"description": "Delete all cookies visible to the current page."
 	},
-	"nw.end": {
-		"prefix": "nw.end",
+	"nwa.end": {
+		"prefix": "nwa.end",
 		"body": "${1:browser}.end(${2:optional_callback});",
 		"description": "Ends the session. Uses session protocol command."
 	},
-	"nw.getAttribute": {
-		"prefix": "nw.getAttribute",
+	"nwa.getAttribute": {
+		"prefix": "nwa.getAttribute",
 		"body": "${1:browser}.getAttribute(${2:selector}, ${3:attribute},(result)=> {});",
 		"description": "Retrieve the value of an attribute for a given DOM element. Uses elementIdAttribute protocol command."
 	},
-	"nw.getCookie": {
-		"prefix": "nw.getCookie",
+	"nwa.getCookie": {
+		"prefix": "nwa.getCookie",
 		"body": "${1:browser}.getCookie(${2:name}, ${3:(result)=> {});",
 		"description": "Retrieve a single cookie visible to the current page. The cookie is returned as a cookie JSON object, as defined here.Uses cookie protocol command."
 	},
-	"nw.getCookies": {
-		"prefix": "nw.getCookies",
+	"nwa.getCookies": {
+		"prefix": "nwa.getCookies",
 		"body": "${1:browser}.getCookies((result)=> {});",
 		"description": "Retrieve all cookies visible to the current page. The cookies are returned as an array of cookie JSON object"
 	},
-	"nw.getCssProperty": {
-		"prefix": "nw.getCssProperty",
+	"nwa.getCssProperty": {
+		"prefix": "nwa.getCssProperty",
 		"body": "${1:browser}.getCssProperty(${2:selector}, ${3:cssProperty},(result)=> {});",
 		"description": "Retrieve the value of a css property for a given DOM element. Uses elementIdCssProperty protocol command."
 	},
-	"nw.getElementSize": {
-		"prefix": "nw.getElementSize",
+	"nwa.getElementSize": {
+		"prefix": "nwa.getElementSize",
 		"body": "${1:browser}.getCookies(${2:selector},(result)=> {});",
 		"description": "Determine an element's size in pixels. Uses elementIdSize protocol command."
 	},
-	"nw.getLocation": {
-		"prefix": "nw.getLocation",
+	"nwa.getLocation": {
+		"prefix": "nwa.getLocation",
 		"body": "${1:browser}.getLocation(${2:selector},(result)=> {});",
 		"description": "Determine an element's location on the page. The point (0, 0) refers to the upper-left corner of the page.The element's coordinates are returned as a JSON object with x and y properties. "
 	},
-	"nw.getLocationInView": {
-		"prefix": "nw.getLocationInView",
+	"nwa.getLocationInView": {
+		"prefix": "nwa.getLocationInView",
 		"body": "${1:browser}.getLocationInView(${2:selector},(result)=> {});",
 		"description": "Determine an element's location on the screen once it has been scrolled into view. Uses elementIdLocationInView protocol command."
 	},
-	"nw.getLog": {
-		"prefix": "nw.getLog",
+	"nwa.getLog": {
+		"prefix": "nwa.getLog",
 		"body": "${1:browser}.getLog(${2:[typeString]},(result)=> {});",
 		"description": "Gets a log from selenium."
 	},
-	"nw.getLogTypes": {
-		"prefix": "nw.getLogTypes",
+	"nwa.getLogTypes": {
+		"prefix": "nwa.getLogTypes",
 		"body": "${1:browser}.getLogTypes((typesArray)=> {});",
 		"description": "Gets the available log types. More info about log types in WebDriver can be found here: https://github.com/SeleniumHQ/selenium/wiki/Logging"
 	},
-	"nw.getTagName": {
-		"prefix": "nw.getTagName",
+	"nwa.getTagName": {
+		"prefix": "nwa.getTagName",
 		"body": "${1:browser}.getTagName(${2:selector},(result)=> {});",
 		"description": "Query for an element's tag name. Uses elementIdName protocol command."
 	},
-	"nw.getText": {
-		"prefix": "nw.getText",
+	"nwa.getText": {
+		"prefix": "nwa.getText",
 		"body": "${1:browser}.getText(${2:selector},(result)=> {});",
 		"description": "Returns the visible text for the element. Uses elementIdText protocol command."
 	},
-	"nw.getTitle": {
-		"prefix": "nw.getTitle",
+	"nwa.getTitle": {
+		"prefix": "nwa.getTitle",
 		"body": "${1:browser}.getTitle((result)=> {});",
 		"description": "Returns the title of the current page. Uses title protocol command."
 	},
-	"nw.getValue": {
-		"prefix": "nw.getValue",
+	"nwa.getValue": {
+		"prefix": "nwa.getValue",
 		"body": "${1:browser}.getValue(${2:selector},(result)=> {});",
 		"description": "Returns a form element current value. Uses elementIdValue protocol command."
 	},
-	"nw.init": {
-		"prefix": "nw.init",
+	"nwa.init": {
+		"prefix": "nwa.init",
 		"body": "${1:browser}.init();",
 		"description": "This command is an alias to url and also a convenience method when called without any arguments in the sense that it performs a call to .url() with passing the value of launch_url field from the settings file."
 	},
-	"nw.injectScript": {
-		"prefix": "nw.injectScript",
+	"nwa.injectScript": {
+		"prefix": "nwa.injectScript",
 		"body": "${1:browser}.injectScript(${2:scriptUrl},${2:optional_callback});",
 		"description": "Returns a form element current value. Uses elementIdValue protocol command."
 	},
-	"nw.isLogAvailable": {
-		"prefix": "nw.isLogAvailable",
+	"nwa.isLogAvailable": {
+		"prefix": "nwa.isLogAvailable",
 		"body": "${1:browser}.isLogAvailable(${2:[typeString]},(result)=> {});",
 		"description": "Utility command to test if the log type is available."
 	},
-	"nw.isVisible": {
-		"prefix": "nw.isVisible",
+	"nwa.isVisible": {
+		"prefix": "nwa.isVisible",
 		"body": "${1:browser}.isVisible(${2:selector},(result)=> {});",
 		"description": "Determine if an element is currently displayed. Uses elementIdDisplayed protocol command."
 	},
-	"nw.maximizeWindow": {
-		"prefix": "nw.maximizeWindow",
+	"nwa.maximizeWindow": {
+		"prefix": "nwa.maximizeWindow",
 		"body": "${1:browser}.maximizeWindow();",
 		"description": "Maximizes the current window."
 	},
-	"nw.moveToElement": {
-		"prefix": "nw.moveToElement",
+	"nwa.moveToElement": {
+		"prefix": "nwa.moveToElement",
 		"body": "${1:browser}.moveToElement(${2:selector}, ${3:xoffset} , ${4:yoffset} , ${5:optional_callback}));",
 		"description": "Move the mouse by an offset of the specified element. Uses moveTo protocol command."
 	},
-	"nw.pause": {
-		"prefix": "nw.pause",
+	"nwa.pause": {
+		"prefix": "nwa.pause",
 		"body": "${1:browser}.pause(${2:ms});",
 		"description": "Suspends the test for the given time in milliseconds. If the milliseconds argument is missing it will suspend the test indefinitely"
 	},
-	"nw.perform": {
-		"prefix": "nw.perform",
+	"nwa.perform": {
+		"prefix": "nwa.perform",
 		"body": "${1:browser}.perform(${2:callback});",
 		"description": "A simple perform command which allows access to the 'api' in a callback.Can be useful if you want to read variables set by other commands."
 	},
-	"nw.resizeWindow": {
-		"prefix": "nw.maximizeresizeWindowWindow",
+	"nwa.resizeWindow": {
+		"prefix": "nwa.maximizeresizeWindowWindow",
 		"body": "${1:browser}.resizeWindow(${2:width}, ${3:height});",
 		"description": "Resizes the current window."
 	},
-	"nw.saveScreenshot": {
-		"prefix": "nw.saveScreenshot",
+	"nwa.saveScreenshot": {
+		"prefix": "nwa.saveScreenshot",
 		"body": "${1:browser}.saveScreenshot(${2:fileName});",
 		"description": "Take a screenshot of the current page and saves it as the given filename."
 	},
-	"nw.setCookie": {
-		"prefix": "nw.setCookie",
+	"nwa.setCookie": {
+		"prefix": "nwa.setCookie",
 		"body": "${1:browser}.setCookie(${2:object});",
 		"description": "Set a cookie, specified as a cookie JSON object"
 	},
-	"nw.setValue": {
-		"prefix": "nw.setValue",
+	"nwa.setValue": {
+		"prefix": "nwa.setValue",
 		"body": "${1:browser}.setValue(${2:selector}, ${3:inputValue});",
 		"description": "Sends some text to an element. Can be used to set the value of a form element or to send a sequence of key strokes to an element. Any UTF-8 character may be specified."
 	},
-	"nw.setWindowPosition": {
-		"prefix": "nw.setWindowPosition",
+	"nwa.setWindowPosition": {
+		"prefix": "nwa.setWindowPosition",
 		"body": "${1:browser}.setWindowPosition(${2:xoffset} , ${3:yoffset});",
 		"description": "Sets the current window position."
 	},
-	"nw.submitForm": {
-		"prefix": "nw.submitForm",
+	"nwa.submitForm": {
+		"prefix": "nwa.submitForm",
 		"body": "${1:browser}.submitForm(${2:selector});",
 		"description": "Submit a FORM element. The submit command may also be applied to any element that is a descendant of a FORM element. Uses submit protocol command."
 	},
-	"nw.switchWindow": {
-		"prefix": "nw.switchWindow",
+	"nwa.switchWindow": {
+		"prefix": "nwa.switchWindow",
 		"body": "${1:browser}.switchWindow(${2:handleOrName});",
 		"description": "Change focus to another window. The window to change focus to may be specified by its server assigned window handle, or by the value of its name attribute.To find out the window handle use window_handles protocol action"
 	},
-	"nw.urlHash": {
-		"prefix": "nw.urlHash",
+	"nwa.urlHash": {
+		"prefix": "nwa.urlHash",
 		"body": "${1:browser}.urlHash(${2:hash});",
 		"description": "Convenience method that adds the specified hash (i.e. url fragment) to the current value of the launch_url as set in nightwatch.json."
 	},
-	"nw.useCss": {
-		"prefix": "nw.useCss",
+	"nwa.useCss": {
+		"prefix": "nwa.useCss",
 		"body": "${1:browser}.useCss(); // we're back to CSS now",
 		"description": "Sets the locate strategy for selectors to css selector, therefore every following selector needs to be specified as css."
 	},
-	"nw.useXpath": {
-		"prefix": "nw.useXpath",
+	"nwa.useXpath": {
+		"prefix": "nwa.useXpath",
 		"body": "${1:browser}.useXpath(); // every selector now must be xpath",
 		"description": "Sets the locate strategy for selectors to xpath, therefore every following selector needs to be specified as xpath"
 	},
-	"nw.waitForElementNotPresent": {
-		"prefix": "nw.waitForElementNotPresent",
+	"nwa.waitForElementNotPresent": {
+		"prefix": "nwa.waitForElementNotPresent",
 		"body": "${1:browser}.waitForElementNotPresent(${2:selector}, ${3:time});",
 		"description": "Opposite of waitForElementPresent. Waits a given time in milliseconds for an element to be not present (i.e. removed) in the page before performing any other commands or assertions.,If the element is still present after the specified amount of time, the test fails.,You can change the polling interval by defining a waitForConditionPollInterval property (in milliseconds) in as a global property in your nightwatch.json or in your external globals file.,Similarly, a default timeout can be specified as a global waitForConditionTimeout property (in milliseconds)."
 	},
-	"nw.waitForElementNotVisible": {
-		"prefix": "nw.waitForElementNotVisible",
+	"nwa.waitForElementNotVisible": {
+		"prefix": "nwa.waitForElementNotVisible",
 		"body": "${1:browser}.waitForElementNotVisible(${2:selector}, ${3:time});",
 		"description": "Opposite of waitForElementVisible. Waits a given time in milliseconds for an element to be not visible (i.e. hidden but existing) in the page before performing any other commands or assertions.If the element fails to be hidden in the specified amount of time, the test fails.You can change the polling interval by defining a waitForConditionPollInterval property (in milliseconds) in as a global property in your nightwatch.json or in your external globals file.Similarly, a default timeout can be specified as a global waitForConditionTimeout property (in milliseconds);"
 	},
-	"nw.waitForElementPresent": {
-		"prefix": "nw.waitForElementPresent",
+	"nwa.waitForElementPresent": {
+		"prefix": "nwa.waitForElementPresent",
 		"body": "${1:browser}.waitForElementPresent(${2:selector}, ${3:time});",
 		"description": "Waits a given time in milliseconds for an element to be present in the page before performing any other commands or assertions.If the element fails to be present in the specified amount of time, the test fails. You can change this by setting abortOnFailure to false.You can change the polling interval by defining a waitForConditionPollInterval property (in milliseconds) in as a global property in your nightwatch.json or in your external globals file.Similarly, a default timeout can be specified as a global waitForConditionTimeout property (in milliseconds)."
 	},
-	"nw.waitForElementVisible": {
-		"prefix": "nw.waitForElementVisible",
+	"nwa.waitForElementVisible": {
+		"prefix": "nwa.waitForElementVisible",
 		"body": "${1:browser}.waitForElementVisible(${2:selector}, ${3:time});",
 		"description": "Waits a given time in milliseconds for an element to be visible in the page before performing any other commands or assertions.If the element fails to be present and visible in the specified amount of time, the test fails. You can change this by setting abortOnFailure to false.You can change the polling interval by defining a waitForConditionPollInterval property (in milliseconds) in as a global property in your nightwatch.json or in your external globals file.Similarly, a default timeout can be specified as a global waitForConditionTimeout property (in milliseconds)."
 	}

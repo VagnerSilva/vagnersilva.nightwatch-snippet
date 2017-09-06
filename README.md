@@ -1,2 +1,12 @@
 # vagnersilva.nightwatch-snippet
-Nightwatch Snippet Javascript
+
+
+![icon](/images/nw_shield.jpg)
+
+Use the corresponding prefix
+
+>Assert: nwa.
+
+>Command: nwc.
+
+>Wait: nwe.

@@ -1,0 +1,34 @@
+{
+    "name": "nightwatch Snippets",
+    "displayName": "NightWatch Snippets",
+    "description": "NightWatch with Command, Assert and Expect Snippets",
+    "version": "1.0.0",
+    "publisher": "VagnerS",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url"https://github.com/VagnerSilva/vagnersilva.nightwatch-snippet.git"
+	},
+	"keywords": [
+		"NightWatch",
+		"Night",
+		"Watch",
+		"Snippet",
+		"Javascript"
+	]
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Snippets",
+		"Other"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "Javascript",
+                "path": "./snippets/commands.json"
+            }
+        ]
+    }
+}

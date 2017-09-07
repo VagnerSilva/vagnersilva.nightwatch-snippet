@@ -1,33 +1,52 @@
 {
-    "name": "nightwatch Snippets",
+    "name": "nightwatchjs",
+    "publisher": "VagnerS",
     "displayName": "NightWatch Snippets",
     "description": "NightWatch with Command, Assert and Expect Snippets",
-    "version": "1.0.0",
-    "publisher": "VagnerS",
-	"license": "SEE LICENSE IN LICENSE.md",
-	"repository": {
-		"type": "git",
-		"url"https://github.com/VagnerSilva/vagnersilva.nightwatch-snippet.git"
-	},
-	"keywords": [
-		"NightWatch",
-		"Night",
-		"Watch",
-		"Snippet",
-		"Javascript"
-	]
+    "icons": "images/nw_shield.jpg",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "galleryBanner": {
+        "color": "#0273D4",
+        "theme": "dark"
+    },
+    "license": "SEE LICENSE IN LICENSE.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/VagnerSilva/vagnersilva.nightwatch-snippet.git"
+    },
+    "keywords": [
+        "NightWatch",
+        "Night",
+        "Watch",
+        "Snippet",
+        "Javascript"
+    ],
+    "version": "1.0.5",
     "engines": {
+        "vscode": "^1.15.0"
+    },
+    "devDependencies": {
         "vscode": "^1.15.0"
     },
     "categories": [
         "Snippets",
-		"Other"
+        "Other"
     ],
     "contributes": {
+        "jsonValidation": [
+            {
+                "fileMatch": "manifest.json",
+                "url": "http://json.schemastore.org/web-manifest"
+            }
+        ],
         "snippets": [
             {
-                "language": "Javascript",
-                "path": "./snippets/commands.json"
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
             }
         ]
     }
